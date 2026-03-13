@@ -12,10 +12,11 @@
     </style>
   </head>
   <body>
+    <p id="clock"></p>
     <script>
-      var now = new Date(); // 현재 날짜와 시간을 나타내는 Date 객체 생성
-      var disp = now.toLocaleTimeString(); // 현재 시간을 현지 시간 형식으로 문자열로 변환
-      document.write('현재 시각: ' + disp); // 변환된 시간 문자열을 웹 페이지에 출력
+      const now = new Date(); // 현재 날짜와 시간을 나타내는 Date 객체 생성
+      const disp = now.toLocaleTimeString(); // 현재 시간을 현지 시간 형식으로 문자열로 변환
+      document.querySelector('#clock').textContent = `현재 시각: ${disp}`; // 변환된 시간 문자열을 웹 페이지에 출력
     </script>
   </body>
 </html>
