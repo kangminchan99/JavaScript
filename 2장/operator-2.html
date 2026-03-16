@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>연산자</title>
+  </head>
+  <body>
+    <script>
+      // window.onload 이벤트는 웹 페이지가 완전히 로드된 후에 실행되는 함수를 정의하는 이벤트 핸들러입니다.
+      window.onload = function () {
+        let list = ''; // 문자열 타입
+        let num = 10; // 숫자 타입
+        // 복합 대입 연산자(+=)를 사용하여 문자열에 HTML 태그와 내용을 추가
+        list += '<ul>'; // 문자열에 HTML 태그 추가
+        list += '     <li>사과</li>'; // 문자열에 HTML 태그 추가
+        list += '     <li>먹고싶다</li>'; // 문자열에 HTML 태그 추가
+        list += '</ul>'; // 문자열에 HTML 태그 추가
+        // 정수형도 복합 대입 연산자(+=)를 사용하여 숫자 값을 증가시키는 예시
+        num += 10;
+        num += 10;
+        num += 10;
+        num += 10;
+        document.body.innerHTML = list; // 완성된 HTML 문자열을 웹 페이지의 본문에 삽입하여 표시
+        document.body.innerHTML += num; // 숫자 값을 문자열로 변환하여 웹 페이지의 본문에 추가로 삽입하여 표시
+      };
+    </script>
+  </body>
+</html>
