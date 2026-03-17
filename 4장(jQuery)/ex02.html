@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery로 색상 바꾸기</title>
+    <!-- jQuery 라이브러리를 CDN에서 불러옵니다. -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- 로컬에 저장된 jQuery 라이브러리를 불러옵니다. -->
+    <script src="lib/jquery-4.0.0.min.js"></script>
+    <script>
+      // 문서가 완전히 로드된 후에 실행되는 코드입니다.
+      $(document).ready(function () {
+        // 메뉴2의 모든 항목의 글자색을 빨간색으로 변경
+        $('#menu2 li').css('color', '#ff0000');
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <ul class="menu" id="menu1">
+        <li>apple</li>
+        <li>banana</li>
+        <li>grape</li>
+        <li>orange</li>
+        <li>melon</li>
+      </ul>
+      <ul class="menu" id="menu2">
+        <li>onion</li>
+        <li>garlic</li>
+        <li>carrot</li>
+        <li>potato</li>
+        <li>cabbage</li>
+      </ul>
+    </div>
+    <script></script>
+  </body>
+</html>

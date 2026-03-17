@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js로 색상 바꾸기</title>
+  </head>
+  <body>
+    <div>
+      <ul class="menu" id="menu1">
+        <li>apple</li>
+        <li>banana</li>
+        <li>grape</li>
+        <li>orange</li>
+        <li>melon</li>
+      </ul>
+      <ul class="menu" id="menu2">
+        <li>onion</li>
+        <li>garlic</li>
+        <li>carrot</li>
+        <li>potato</li>
+        <li>cabbage</li>
+      </ul>
+    </div>
+    <script>
+      window.onload = function () {
+        // id가 menu2인 요소를 선택하여 menu2 변수에 저장
+        const menu2 = document.getElementById('menu2');
+        // menu2 요소의 자식 요소 중에서 li 태그를 모두 선택하여 liArr 변수에 저장
+        const liArr = menu2.getElementsByTagName('li');
+        // liArr은 HTMLCollection 객체이므로, for문을 사용하여 각 요소에 접근할 수 있습니다.
+        for (let i = 0; i < liArr.length; i++) {
+          liArr[i].style.color = 'red';
+        }
+      };
+    </script>
+  </body>
+</html>
