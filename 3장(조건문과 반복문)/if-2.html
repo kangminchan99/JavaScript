@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문-2</title>
+  </head>
+  <body>
+    <script>
+      // 2와 3의 공배수 검사 프로그램
+      const value = window.prompt('숫자를 입력하세요.');
+      // prompt() 함수는 문자열을 반환하므로, 입력받은 값을 숫자로 변환해야 합니다.
+      const number = parseInt(value); // 입력받은 문자열을 숫자로 변환
+
+      if (number % 2 == 0 && number % 3 == 0) {
+        alert('2와 3의 공배수입니다.');
+      } else {
+        alert('2와 3의 공배수가 아닙니다.');
+      }
+    </script>
+  </body>
+</html>

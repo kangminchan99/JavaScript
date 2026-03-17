@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>조건문-3</title>
+  </head>
+  <body>
+    <script>
+      const score = window.prompt('점수를 입력하세요.');
+
+      const number = parseInt(score);
+
+      if (number >= 90) {
+        alert('A학점입니다.');
+      } else if (number >= 80) {
+        alert('B학점입니다.');
+      } else if (number >= 70) {
+        alert('C학점입니다.');
+      } else if (number >= 60) {
+        alert('D학점입니다.');
+      } else {
+        alert('F학점입니다.');
+      }
+    </script>
+  </body>
+</html>
